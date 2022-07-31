@@ -27,13 +27,14 @@ public class Main {
 
 
         PrintService printService = new PrintService();
-
+        System.out.println();
         printService.print (griffindors);
         printService.print (hufflepuffs);
         printService.print (ravenclaws);
         printService.print (slytherins);
         System.out.println();
-        new Hogwarts().campare(slytherins[0],griffindors[1]);
+        new Hogwarts().campare(slytherins[0],griffindors[2]);
+        new Hogwarts().campare(ravenclaws[1],hufflepuffs[0]);
 
     }
 }
