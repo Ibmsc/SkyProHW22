@@ -38,4 +38,6 @@ public class Hufflepuff extends Student {
     public void setHonesty(int honesty) {
         this.honesty = honesty;
     }
+
+
 }

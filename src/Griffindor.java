@@ -15,6 +15,20 @@ public class Griffindor extends Student {
         this.honor = honor;
         this.nobility = nobility;
     }
+    public void compare(Griffindor student) {
+        int powerStudentOne = student.getPowerOfMagic() + student.getDistanceTransgression() + student.honor + student.bravery +
+                student.nobility;
+        int powerStudentSecond = this.getPowerOfMagic() + this.getDistanceTransgression() + this.honor + this.bravery +
+                this.nobility;
+        if (powerStudentOne > powerStudentSecond) {
+            System.out.println("Победил первый студент");
+        } else if (powerStudentOne < powerStudentSecond){
+            System.out.println("Победил второй студент");
+        }else {
+            System.out.println("Победила дружба!");
+        }
+    }
+
     public int getNobility() {
         return nobility;
     }

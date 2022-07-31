@@ -5,9 +5,10 @@ public class Hogwarts {
 
     Griffindor[] griffindors = {
             new Griffindor(" Гарри "," Поттер ",90,80,7,8,9),
-            new Griffindor(" Рон "," Грейнджер ",81,90,8,6,7),
-            new Griffindor(" Гарри "," Уизли ",76,79,8,7,6)
+            new Griffindor(" Гермиона "," Грейнджер ",81,90,8,6,7),
+            new Griffindor(" Рон "," Уизли ",76,79,8,7,6)
     };
+
     Hufflepuff[] hufflepuffs = {
             new Hufflepuff(" Захария "," Смит ",76,72,7,8,9),
             new Hufflepuff(" Седрик "," Диггори ",58,90,4,6,7),
@@ -26,5 +27,19 @@ public class Hogwarts {
       new Slytherin(" Грегори "," Гойл ",50,90,8,7,6,
               2,5)
     };
+
+    public void campare(Student studentFirst, Student studentSecond) {
+        int powerStudentOne = studentFirst.getPowerOfMagic() + studentFirst.getDistanceTransgression();
+        int powerStudentSecond = studentSecond.getPowerOfMagic() + studentSecond.getDistanceTransgression();
+        if (powerStudentOne > powerStudentSecond) {
+            System.out.println(studentFirst.getName() + studentFirst.getSurname() + " обладает большей мощностью магии, чем " +
+                    studentSecond.getName() + studentSecond.getSurname());
+        } else if (powerStudentOne < powerStudentSecond){
+            System.out.println(studentSecond.getName() + studentSecond.getSurname() + "обладает большей мощностью магии, чем"
+                    + studentFirst.getName() + studentFirst.getSurname());
+        }else {
+            System.out.println("Победила дружба!");
+        }
+    }
 
 }

@@ -42,4 +42,6 @@ public class Student {
     public void setDistanceTransgression(int distanceTransgression) {
         this.distanceTransgression = distanceTransgression;
     }
+
+
 }
