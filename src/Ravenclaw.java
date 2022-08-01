@@ -1,7 +1,7 @@
 //Когтевран
 // умный(smart), мудрый(wise), остроумный(witty) и творческий(creative)
 //Чжоу Чанг, Падма Патил и Маркус Белби.
-public class Ravenclaw extends Student{
+public class Ravenclaw extends Hogwarts{
 
     private int smart;
     private int wise;
@@ -15,6 +15,16 @@ public class Ravenclaw extends Student{
         this.wise = wise;
         this.witty = witty;
         this.creative = creative;
+    }
+    @Override
+    public String toString() {
+        return "Я,"+getName()+" "+getSurname()+"- ученик Когтеврана!" +
+                " У меня ум = " +smart +
+                ", мудрость = " + wise +
+                ", остроумие = " + witty +
+                ", творчество = " + creative +
+                ", сила магии = " + this.getPowerOfMagic() +
+                ", расстояние трансгресии = " + this.getDistanceTransgression();
     }
 
     public int getSmart() {

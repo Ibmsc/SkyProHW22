@@ -1,7 +1,7 @@
 //Пуффендуй
 //трудолюбивый(hardworking), верность(loyalty), честность(honesty).
 //Захария Смит, Седрик Диггори, Джастин Финч-Флетчли.
-public class Hufflepuff extends Student {
+public class Hufflepuff extends Hogwarts {
 
     private int hardworking;
     private int loyalty;
@@ -13,6 +13,15 @@ public class Hufflepuff extends Student {
         this.hardworking = hardworking;
         this.loyalty = loyalty;
         this.honesty = honesty;
+    }
+    @Override
+    public String toString() {
+        return "Я,"+getName()+" "+getSurname()+"- ученик Пуффендуя!" +
+                " У меня трудолюбие = " + hardworking +
+                ", верность = " + loyalty +
+                ", честность = " + honesty +
+                ", сила магии = " + this.getPowerOfMagic() +
+                ", расстояние трансгресии = " + this.getDistanceTransgression();
     }
 
     public int getHardworking() {

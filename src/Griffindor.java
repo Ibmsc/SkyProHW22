@@ -1,7 +1,7 @@
 //Гриффиндор
 //благородство(nobility), честь(honor) и храбрость(bravery)
 //Гарри Поттер, Гермиона Грейнджер и Рон Уизли
-public class Griffindor extends Student {
+public class Griffindor extends Hogwarts {
 
     private int nobility;
     private int honor;
@@ -15,6 +15,16 @@ public class Griffindor extends Student {
         this.honor = honor;
         this.nobility = nobility;
     }
+    @Override
+    public String toString() {
+        return "Я,"+getName()+" "+getSurname()+"- ученик Гриффиндора!" +
+                " У меня благородство = " + nobility +
+                ", честь = " + honor +
+                ", храбрость = " + bravery +
+                ", сила магии = " + this.getPowerOfMagic() +
+                ", расстояние трансгресии = " + this.getDistanceTransgression();
+    }
+
 
 
     public int getNobility() {

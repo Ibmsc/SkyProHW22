@@ -2,7 +2,7 @@
 // хитрый(cunning), решительный(determined), амбициозный(ambitious), находчивый(resourceful) и
 // жажда власти( thirst for power).
 //Драко Малфой, Грэхэм Монтегю, Грегори Гойл
-public class Slytherin extends Student {
+public class Slytherin extends Hogwarts {
     private int cunning;
     private int determined;
     private int ambitious;
@@ -17,6 +17,17 @@ public class Slytherin extends Student {
         this.ambitious = ambitious;
         this.resourceful = resourceful;
         this.thirstForPower = thirstForPower;
+    }
+    @Override
+    public String toString() {
+        return "Я,"+getName()+" "+getSurname()+"- ученик Слизерина!" +
+                " У меня хитрость = " + cunning +
+                ", решительность = " + determined +
+                ", амбициозность = " + ambitious +
+                ", находчивость = " + resourceful +
+                ", жажда власти = " + thirstForPower +
+                ", сила магии = " + this.getPowerOfMagic() +
+                ", расстояние трансгресии = " + this.getDistanceTransgression();
     }
 
     public int getCunning() {
